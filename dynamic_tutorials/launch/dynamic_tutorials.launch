@@ -1,0 +1,5 @@
+<launch>
+    <node name="dynamic_tutorials" pkg = "dynamic_tutorials" type="server.py"/>
+    <node name="dynamic_client" pkg = "dynamic_tutorials" type="client.py"/>
+
+</launch>
