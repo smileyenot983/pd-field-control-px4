@@ -10,7 +10,7 @@ from dynamic_reconfigure.msg import Config
 
 def callback(config, level):
 
-    rospy.loginfo("Reconfigure Request(x,y,z): {field_x}, {field_y}, {field_z}".format(**config))
+    rospy.loginfo("""Reconfigure Request: {tolerance_distance}, {constant_value_k}""".format(**config))
     return config
 
 
